@@ -16,3 +16,5 @@ Ch05說明TensorFlow 1 時便內含keras的使用，而在TensorFlow 2 大幅改
 exercise內kernel_initializer是關於權值初始化的設定，其未來章節與類神經網路的正反項運作有相當的重要性。
 
 Ch06講了一些類神經網路包含active function和正反向傳遞的概念，數學推導可以看bp的pdf或網路查。
+
+Ch07說明overfitting和underfitting，並介紹data set使用上一般會被分為training, validation, test三個部分。validation驗證多是由underfitting逐漸往overfitting邁進，當發現validation的loss高於training的loss時，應該暫停看看，因為極有可能出現overfitting的情況。若data set太小，可以採cross-validation方式將資料切為[training, validation], [test]兩個部分。
