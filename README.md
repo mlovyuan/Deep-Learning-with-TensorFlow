@@ -17,4 +17,8 @@ exercise內kernel_initializer是關於權值初始化的設定，其未來章節
 
 Ch06講了一些類神經網路包含active function和正反向傳遞的概念，數學推導可以看bp的pdf或網路查。
 
-Ch07說明overfitting和underfitting，並介紹data set使用上一般會被分為training, validation, test三個部分。validation驗證多是由underfitting逐漸往overfitting邁進，當發現validation的loss高於training的loss時，應該暫停看看，因為極有可能出現overfitting的情況。若data set太小，可以採cross-validation方式將資料切為[training, validation], [test]兩個部分。
+Ch08說明overfitting和underfitting，並介紹data set使用上一般會被分為training, validation, test三個部分。validation驗證多是由underfitting逐漸往overfitting邁進，當發現validation的loss高於training的loss時，應該暫停看看，因為極有可能出現overfitting的情況。若data set太小，可以採cross-validation方式將資料切為[training, validation], [test]兩個部分。
+
+Ch09介紹權重初始化的重要性和xavier初始化，其是希望每一層outputs的標準差都能盡量相等。
+
+Ch10 ①最初說明Stochastic gradient descent是以批次(batch)為單位進行參數的更新，而訓練所抽取的批次樣本是隨機的，其優點在於它相較於GF能更快速的找到最佳解，但可能因為學習率太大使得參數更新幅度過多，反而會遠離最佳解(有點像車開太快開過頭要繞遠路的意思)。再SGD後，課程提到了local與global minimum的狀況，並以Momentum方式尋找global minimum，其原理如同物理上動量的慣性。 ②學習率從大至小，原因與SGD有點類似，加快速度並避免oscillation，超過最佳解。最後簡單說明了AdaGrad和RMSprop兩者能動態改善學習率。最後，③將上述針對weight的Momentum與針對學習率的AdaGrad或RMSprop結合在一起，便是Adam Optimizer。
