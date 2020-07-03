@@ -31,11 +31,14 @@ Ch12 做數字辨識，區分validation和test的不同，validation與test的ac
 
 Ch13 做有聲書購買預測。預處理時盡量將預測的target data數量均分，因為數量不對等容易使學習效果不佳，尤其在像是0.9 : 0.1這種情況下均猜某種結果都能有九成準確率了。
 
+Ch14 提供矩陣運算的課程供為學習過的人。
+
+Ch15 總結課程內容並概述CNN與RNN的運作，另外有稍微提及學校課程學到的幾種演算法。
 
 <br>
 <br>
 
 #### 語法參考文件
-
+---
 keras的基本語法介紹
 https://cloud.tencent.com/developer/article/1010815
